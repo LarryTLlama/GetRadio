@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"></meta>-->
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GetRadio</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!--Must include the following in EVERY page!-->
+<script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+<!--Done! Yaaaaaaaaay-->
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+  <div style="z-index: 100;" class="topnavwrap">
+  <div class="topnav">
+  <a class="active" href="/"><img style="height: 22px; width: 130px;" src="logo.png"> </img></a>
+</div>
+</div>
+
+<!--Main welcome overlay (White bit)-->
+<div id="banner">
+<div id="banneroverlay">
+
+<img src="logo.png" id="centralLogo"></img>
+<h1 style="color: white;">Privacy Policy</h1>
+<br>
+<p style="color: white;">Scroll down for information</p>
+</div>
+</div>
+
+<!--First bit of content-->
+<div id="content-1">
+<div class="inner-content-card">
+<i id="bigiconone" class="fa fa-users" aria-hidden="true"></i>
+<h1>Privacy</h1>
+
+<p>GetRadio requires no signing in, so we <strong>never</strong> ask for any personal information. By clicking "Continue to App" on our in-site welcome page, you accept that we use 3rd party services to fetch data from in order to provide these services. Unfortunately, due to the nature of the app, these services make GetRadio functional, so is not functional without these. Please note that GetRadio may change this document in the future, but we will aim to contact you in-app if that happens. Any data stored in-app stays in the app.</p>
+
+</div>
+
+<div class="inner-content-card">
+<h1>Third party services</h1>
+
+<p>As mentioned above, we send data to a couple of 3rd party services. These are the following:<br><br>
+-> RadioBrowser (<a href="https://www.radio-browser.info">website</a>) <br>
+<i class="fa fa-arrow-circle-right" aria-hidden="true"></i> This is an open-source list of radio stations, including a full ranking system of each too. This allows us to search for stations around the world<br>
+<i class="fa fa-arrow-circle-right" aria-hidden="true"></i> We send data each time you click to listen to a station (not pausing/playing) to update their server showing how many people have listened. These are called "clicks" and they help run their "Popular" stations list. We display these on the home page too for users to see publicly. However, we will send this data anonymously, with no personal details collected. Due to the nature of the service, this cannot be deleted<br><br>
+-> Mpg123<br>
+<i class="fa fa-arrow-circle-right" aria-hidden="true"></i> This service makes our audio service functional. All installations of GetRadio install this as standard, though it is not opened/used until audio is required to play<br>
+<i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Therefore, since this is a locally installed service, Mpg123 does not store any data. We simply pass along the radio station you're listening to and it decodes it to your speakers.
+</p>
+
+</div>
+
+<div class="inner-content-card">
+<h1>TL;DR</h1>
+
+<p>(Meaning "Too Long; Didn't read"), we do not send or sell any personal data related to you. The data we send to these services are anonymous so don't tag any data along to your name/location. GetRadio also does not keep any of your data, as we do not collect login details or any other personal information. This privacy policy might change, but we'll let you know when that happens, through our app.<br>
+Remember, that if anyone is asking for any personal data using the GetRadio name, do <strong>not</strong> give them it.
+</p>
+
+</div>
+
+</div>
+
+<footer>
+<br>
+<p id="meee"><i class="fa fa-music" aria-hidden="true"></i> GetRadio by LarryTLlama</p>
+<p style="text-decoration: none;">
+<a href="https://www.github.com/LarryTLlama/GetRadio">Github</a> • <a href="privacy.html">Privacy</a> • <a href="https://www.github.com/LarryTLlama">LarryTLlama</a>
+</p>
+<br>
+<p></p>
+</footer>
+
+  </body>
+</html>

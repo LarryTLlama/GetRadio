@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"></meta>-->
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GetRadio</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!--Must include the following in EVERY page!-->
+<script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+<!--Done! Yaaaaaaaaay-->
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+  <div style="z-index: 100;" class="topnavwrap">
+  <div class="topnav">
+  <a class="active"><img style="height: 22px; width: 130px;" src="logo.png"> </img></a>
+</div>
+</div>
+
+<!--Main welcome overlay (White bit)-->
+<div id="banner">
+<div id="banneroverlay">
+<img src="logo.png" id="centralLogo"></img>
+<h1 style="color: white;">Listen to radio, with no limits</h1>
+<a class="topButton" href="#download"><button><h3>Download</h3></button></a><a class="topbutton" href="#content-1"><button><h3>Learn More</h3></button></a>
+</div>
+</div>
+
+<!--First bit of content-->
+<div id="content-1">
+<div class="inner-content-card">
+<i id="bigiconone" class="fa fa-headphones" aria-hidden="true"></i>
+<h1>Cut out all the nonsense</h1>
+
+<p>GetRadio focuses on easy availability. No more signing in to multiple services. No more tracking.<br> 
+Just easy access to your favourite radio stations</p>
+
+</div>
+
+<div class="inner-content-card">
+<i id="bigiconone" class="fa fa-globe" aria-hidden="true"></i>
+<h1>The whole world, in one app</h1>
+
+<p>Keep up with the whole world, and connect with your favourite news, and music broadcasts.<br> 
+Whether its the UK or the USA, Australia or Japan, its all here.</p>
+
+</div>
+
+<div class="inner-content-card">
+<i id="bigiconthree" class="fa fa-volume-up" aria-hidden="true"></i>
+<h1>Share tracks you love with others online</h1>
+
+<p>Heard a song you like? Never lose it with GetRadio<br>
+Simply tap the "Search Song" button to find it on your favourite service!</p>
+
+</div>
+<h3 style="text-align: center;"> Get it all for free, with GetRadio <i class="fa fa-music" aria-hidden="true"></i></h3>
+
+</div>
+
+<div id="content-2">
+<h1>Live in action</h1>
+<div id="piccont">
+
+<div class="picture">
+<img class="pic" src="screenshot-1.png"></img>
+<p>Home Screen</p>
+</div>
+<div class="picture">
+<img class="pic" src="screenshot-2.png"></img>
+<p>(Optional) Notifications</p>
+</div>
+<div class="picture">
+<img class="pic" src="screenshot-3.png"></img>
+<p>Search Results</p>
+</div>
+</div>
+</div>
+
+<div id="download">
+<div class="inner-content-card" id="downloadcard">
+<h1>Download GetRadio</h1>
+
+<p>Currently, GetRadio is only a Desktop app. Support for mobile coming soon!</p>
+<div class="secondary-content-card" id="windowsDownload">
+<h2><i class="fa fa-windows" aria-hidden="true"></i> Windows</h2>
+<p>View Windows <a href="https://www.github.com/LarryTLlama/GetRadio">Specs and Requirements</a></p>
+<button href="cooldownloadlink"><h3>For x64 Systems</h3></button>
+<button href="cooldownloadlink"><h3>For x86 Systems</h3></button>
+</div>
+
+<div class="secondary-content-card" id="macDownload">
+<h2><i class="fa fa-apple" aria-hidden="true"></i> MacOS</h2>
+<p>View Mac's <a href="https://www.github.com/LarryTLlama/GetRadio">Specs and Requirements</a></p>
+<button href="cooldownloadlink"><h3>Idk how Mac</h3></button>
+<button href="cooldownloadlink"><h3>Actually Works</h3></button>
+</div>
+
+<div style="clear:both"></div>
+<p>Not your style? Wanna be cool? Check out the <a href="coolBeta">Beta Editions</a>
+</div>
+</div>
+
+<footer>
+<br>
+<p id="meee"><i class="fa fa-music" aria-hidden="true"></i> GetRadio by LarryTLlama</p>
+
+<a href="https://www.github.com/LarryTLlama/GetRadio">Github</a> • <a href="privacy.html">Privacy</a> • <a href="https://www.github.com/LarryTLlama">LarryTLlama</a>
+<br>
+<p></p>
+</footer>
+
+  </body>
+</html>
