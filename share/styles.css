@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+p, a {
+	font-family: 'Lato', sans-serif;
+}
+
+#download {
+    background-image: url(../gradient.png);
+    padding: 16px;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+#downloadcard {
+    min-height: 100%;
+}
+
+#windowsDownload {
+	border-radius: 5px;
+	color: black;
+	width: 50%;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin: 0 auto;
+}
+
+.secondary-content-card {
+	padding: 16px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+}
+#littlecardcont {
+	height: auto;
+}
+#beta {
+	padding-top: 10px;
+	min-width: 100%;
+	float: bottom;
+}
+
+button {
+	padding: 5px;
+	font-family: 'Raleway', sans-serif;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
