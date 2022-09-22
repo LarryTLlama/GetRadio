@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+	font-family: 'Raleway', sans-serif;
+}
+
+p, a {
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+.topnavwrap {
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	top: 0;
+    left: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  height: 48px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav span a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+
+
+#menu {
+	width: 100%;
+	background: #2f3036;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+/*Style for menu links*/
+li a {
+	display:block;
+	/*min-width:140px;*/
+	padding-left: 16px;
+	padding-right: 16px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	background: #2f3036;
+	text-decoration: none;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+	background: #19c589;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: #19c589;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+}
+
+/*WOW! Look at these Website Exclusive Styles!*/
+
+#banner {
+	background-image: url('gradient.png');
+	/*background-width: 100% 100%;*/
+	height: 30%;
+	width: 100%;
+	position: static;
+}
+#banneroverlay {
+	float: center;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	height: 30%;
+}
+
+#centralLogo {
+	height: 10%;
+	width: 20%;
+	
+}
+
+#content-1 {
+	padding-top: 16px;
+	height: 75%;
+	width: 100%;
+	background-color: #fff;
+}
+
+.inner-content-card {
+	margin: 5%;
+	padding: 16px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+}
+
+#bigiconone {
+	float: right;
+	font-size: 120px;
+}
+
+#bigicontwo {
+	float: left;
+	font-size: 120px;
+}
+
+#bigiconthree {
+	float: right;
+	font-size: 120px;
+}
+
+#content-2 {
+	background-color: #21212b;
+	color: white;
+	padding: 16px;
+		
+}
+
+.pic {
+	margin: 16px;
+	max-width: 70%;
+}
+
+.picture {
+	width: 30%;
+	text-align: center;
+	display: table-cell;
+}
+
+#piccont {
+	display: table-row;
+}
+
+#download {
+	background-image: url('gradient.png');
+	/*background-width: 100% 100%;*/
+	padding: 16px;
+	height: 100%;
+	position: static;
+	display: block;
+}
+
+#downloadcard {
+	text-align: center;
+}
+
+#windowsDownload {
+	width: 45%;
+	float: left;
+}
+
+#macDownload {
+	width: 45%;
+	float: right;
+}
+
+.secondary-content-card {
+	padding: 16px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+}
+#littlecardcont {
+	height: auto;
+}
+#beta {
+	padding-top: 10px;
+	min-width: 100%;
+	float: bottom;
+}
+
+button {
+	padding: 5px;
+	font-family: 'Raleway', sans-serif;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+footer {
+	background-color: #21212b;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	margin-bottom: 16px;
+	padding: 16px;
+}
