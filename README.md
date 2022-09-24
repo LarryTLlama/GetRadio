@@ -1,8 +1,9 @@
 # GetRadio
 Listen to ANY radio station, all in one app!
+https://larrytllama.github.io/GetRadio
 
 ## Note:
-The app is still being built, but will be done soon!
+GetRadio is only a Windows app at the minute. Linux and MacOS builds coming soon!
 
 ### Features and details (on release):
 - Search and listen to ANY Radio station!
