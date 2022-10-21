@@ -48,11 +48,20 @@
 -> RadioBrowser (<a href="https://www.radio-browser.info">website</a>) <br>
 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> This is an open-source list of radio stations, including a full ranking system of each too. This allows us to search for stations around the world<br>
 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> We send data each time you click to listen to a station (not pausing/playing) to update their server showing how many people have listened. These are called "clicks" and they help run their "Popular" stations list. We display these on the home page too for users to see publicly. However, we will send this data anonymously, with no personal details collected. Due to the nature of the service, this cannot be deleted<br><br>
--> Mpg123<br>
+-> Mpg123 (In app only)<br>
 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> This service makes our audio service functional. All installations of GetRadio install this as standard, though it is not opened/used until audio is required to play<br>
-<i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Therefore, since this is a locally installed service, Mpg123 does not store any data. We simply pass along the radio station you're listening to and it decodes it to your speakers.
+<i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Therefore, since this is a locally installed service, Mpg123 does not store any data. We simply pass along the radio station you're listening to and it decodes it to your speakers.<br><br>
+We also communicate to our own API, which allows us to play radio streams and fetch station data. This is stored in the same place as the GetRadio web app.<br>
+If you're interested in how everything in the API works, check it out in the JS file: <a href="https://github.com/LarryTLlama/GetRadio-Web/blob/main/index.js">Index.js - GetRadio Web Repo</a>
 </p>
 
+</div>
+
+<div class="inner-content-card">
+<h1>Cookies!</h1>
+
+<p>The GetRadio web app (not the desktop app!) will store cookies on your device for the choices that you have made.<br>
+When you indicate that you want/do not want push notifications for each new track, GetRadio will save a cookie so we know what to do next time!</p>
 </div>
 
 <div class="inner-content-card">
